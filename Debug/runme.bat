@@ -1,0 +1,1 @@
+CPP_GetTax.exe https://development.avalara.net  accountnumber licensekey companycode
