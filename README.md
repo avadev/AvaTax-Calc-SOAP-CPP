@@ -1,13 +1,12 @@
-This is the AvaTax PHP client adapter Samle for AvaTax web services. 
+AVATAX ADAPTOR for C ++ integrations
 
-Samples include GetTaxRequest, Ping, PostTax, and Address Validate.
+This is a console app that runs a simple GetTaxRequest to the account specified via command line usage (syntax): CPP_GetTax.exe URL accountnumber licensekey companycode
 
-For samples to function, the Security\Credentials.php must be configured with your
-Account Number and License Key (or username and password) 
+Command Line Example: CPP_GetTax.exe https://development.avalara.net 1100000000 A1B2C3D4E5F6G7H8 MyCompanyCode
 
-Documentation for the Adaptor is located in the Docs  folder (run Docs\index.html)
+Located in the Debug directory along with the executable is a runme.bat file that you can populate with your credentials.
 
-For more details about the Sample - run the readme.html in a browser.
+
 
 
 
