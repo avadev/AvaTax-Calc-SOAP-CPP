@@ -50,7 +50,7 @@ int main(array<System::String ^> ^args)
 	
     /* DetailLevel sets the amount of information returned in the GetTaxResult
 	 * these are in order of detail complexity
-	 * Summary		//Summary is a placeholder - returns Document level detail
+	 * Summary		//returns total tax for each jurisdiction without line detail
 	 * Document		//returns tax for complete order
 	 * Line			//returns tax for each line
 	 * Tax			//returns jurisdictional tax details
