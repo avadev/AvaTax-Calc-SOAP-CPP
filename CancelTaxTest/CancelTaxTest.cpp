@@ -27,7 +27,7 @@ int main()
 
 		// Required Request Parameters
 		cancelTaxRequest->CancelCode = CancelCode::DocVoided;
-		cancelTaxRequest->CompanyCode = //APITrialCompany;
+		cancelTaxRequest->CompanyCode = "APITrialCompany";
 		cancelTaxRequest->DocType = DocumentType::SalesInvoice;
 		cancelTaxRequest->DocCode = "INV001";
 
