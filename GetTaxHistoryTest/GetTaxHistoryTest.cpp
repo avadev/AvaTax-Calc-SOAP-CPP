@@ -27,13 +27,13 @@ int main()
 		GetTaxHistoryRequest^ getTaxHistoryRequest = gcnew GetTaxHistoryRequest;
 
 		// Required Request Parameters
-        getTaxHistoryRequest->CompanyCode = "APITrialCompany";
-        getTaxHistoryRequest->DocType = DocumentType::SalesInvoice;
-        getTaxHistoryRequest->DocCode = "INV001";
+		getTaxHistoryRequest->CompanyCode = "APITrialCompany";
+		getTaxHistoryRequest->DocType = DocumentType::SalesInvoice;
+		getTaxHistoryRequest->DocCode = "INV001";
 		getTaxHistoryRequest->DetailLevel = DetailLevel::Tax;
 
-        // Optional Request Parameters
-        // getTaxHistoryRequest->DocId = "123412341234";
+		// Optional Request Parameters
+		// getTaxHistoryRequest->DocId = "123412341234";
 
 		GetTaxHistoryResult^ getTaxHistoryResult = taxSvc->GetTaxHistory(getTaxHistoryRequest);	
 
