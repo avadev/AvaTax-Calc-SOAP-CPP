@@ -62,9 +62,9 @@ int main()
 			}
 		}
 		else
-        {
-            ValidAddress^ validatedAddress = validateResult->Addresses[0];
-            Console::WriteLine("Validated Address: ");
+		{
+			ValidAddress^ validatedAddress = validateResult->Addresses[0];
+			Console::WriteLine("Validated Address: ");
 			Console::WriteLine("{0}\n{1}\n{2}\n{3}, {4} {5}\nCountry: {6}", 
 				validatedAddress->Line1,
 				validatedAddress->Line2,
@@ -76,7 +76,7 @@ int main()
 			Console::WriteLine("Latitude: {0}\nLongitude: {1}", 
 				validatedAddress->Latitude,
 				validatedAddress->Longitude);            
-        }
+		}
 	}
 	catch(Exception^ ex)
 	{
