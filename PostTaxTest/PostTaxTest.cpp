@@ -26,16 +26,16 @@ int main()
 		PostTaxRequest^ postTaxRequest = gcnew PostTaxRequest;
 
 		// Required Request Parameters
-        postTaxRequest->CompanyCode = "APITrialCompany";
-        postTaxRequest->DocType = DocumentType::SalesInvoice;
-        postTaxRequest->DocCode = "INV001";
-        postTaxRequest->Commit = false;
-        postTaxRequest->DocDate = DateTime::Parse("2014-01-01");
-        postTaxRequest->TotalTax = Convert::ToDecimal(14.36);
-        postTaxRequest->TotalAmount = 175;
+		postTaxRequest->CompanyCode = "APITrialCompany";
+		postTaxRequest->DocType = DocumentType::SalesInvoice;
+		postTaxRequest->DocCode = "INV001";
+		postTaxRequest->Commit = false;
+		postTaxRequest->DocDate = DateTime::Parse("2014-01-01");
+		postTaxRequest->TotalTax = Convert::ToDecimal(14.36);
+		postTaxRequest->TotalAmount = 175;
 
-        // Optional Request Parameters
-        // postTaxRequest->NewDocCode = "INV001-1";
+		// Optional Request Parameters
+		// postTaxRequest->NewDocCode = "INV001-1";
 
 		PostTaxResult^ postTaxResult = taxSvc->PostTax(postTaxRequest);	
 
