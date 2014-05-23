@@ -27,12 +27,12 @@ int main()
 		CommitTaxRequest^ commitTaxRequest = gcnew CommitTaxRequest;
 
 		// Required Request Parameters
-        commitTaxRequest->CompanyCode = "APITrialCompany";
-        commitTaxRequest->DocType = DocumentType::SalesInvoice;
-        commitTaxRequest->DocCode = "INV001";
+		commitTaxRequest->CompanyCode = "APITrialCompany";
+		commitTaxRequest->DocType = DocumentType::SalesInvoice;
+		commitTaxRequest->DocCode = "INV001";
 
-        // Optional Request Parameters
-        // commitTaxRequest->DocId = "123412341234";
+		// Optional Request Parameters
+		// commitTaxRequest->DocId = "123412341234";
 
 		CommitTaxResult^ commitTaxResult = taxSvc->CommitTax(commitTaxRequest);	
 
