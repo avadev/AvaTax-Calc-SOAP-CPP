@@ -162,7 +162,8 @@ int main()
 			
 			for each (TaxLine^ taxLine in adjustTaxResult->TaxLines)
 			{
-				Console::WriteLine("    Line {0} Tax: {1}",	taxLine->No, taxLine->Tax.ToString());
+				Console::WriteLine("    Line {0} Tax: {1}",	
+					taxLine->No, taxLine->Tax.ToString());
 			
 				for each (TaxDetail^ taxDetail in taxLine->TaxDetails)
 				{	
