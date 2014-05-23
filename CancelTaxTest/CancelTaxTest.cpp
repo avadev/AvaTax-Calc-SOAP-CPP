@@ -17,8 +17,8 @@ int main()
 
 		// Header Level Parameters
 		// Required Header Parameters
-		taxSvc->Configuration->Security->Account = "sean.rust";		//accountNumber;
-		taxSvc->Configuration->Security->License = "Squirrel68!";	//licenseKey;
+		taxSvc->Configuration->Security->Account = accountNumber;
+		taxSvc->Configuration->Security->License = licenseKey;
 		taxSvc->Configuration->Url = serviceURL;
 		taxSvc->Configuration->ViaUrl = serviceURL;
 		taxSvc->Profile->Client = "AvaTaxSample";
@@ -27,9 +27,9 @@ int main()
 
 		// Required Request Parameters
 		cancelTaxRequest->CancelCode = CancelCode::DocVoided;
-        cancelTaxRequest->CompanyCode = "SDK";						//APITrialCompany;
-        cancelTaxRequest->DocType = DocumentType::SalesInvoice;
-        cancelTaxRequest->DocCode = "INV002";						//"INV001";
+		cancelTaxRequest->CompanyCode = //APITrialCompany;
+		cancelTaxRequest->DocType = DocumentType::SalesInvoice;
+		cancelTaxRequest->DocCode = "INV001";
 
 		CancelTaxResult^ cancelTaxResult = taxSvc->CancelTax(cancelTaxRequest);	
 
