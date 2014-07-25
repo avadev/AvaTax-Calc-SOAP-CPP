@@ -71,7 +71,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <Reference Include="Avalara.AvaTax.Adapter, Version=14.2.0.0, Culture=neutral, PublicKeyToken=34e4ef76d6267205">
+    <Reference Include="Avalara.AvaTax.Adapter, Version=14.4.0.0, Culture=neutral, PublicKeyToken=34e4ef76d6267205">
       <HintPath>Avalara.AvaTax.Adapter.dll</HintPath>
     </Reference>
     <Reference Include="System" />
