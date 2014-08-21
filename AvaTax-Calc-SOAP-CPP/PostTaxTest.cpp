@@ -2,6 +2,7 @@
 #include "PostTaxTest.h"
 
 using namespace System;
+using namespace System::Configuration;
 using namespace Avalara::AvaTax::Adapter;
 using namespace Avalara::AvaTax::Adapter::TaxService;
 
@@ -9,9 +10,10 @@ PostTaxTest::PostTaxTest(){}
 
 void PostTaxTest::Test()
 {
-	String^ accountNumber = "1234567890";
-	String^ licenseKey = "A1B2C3D4E5F6G7H8";
-	String^ serviceURL = "https://development.avalara.net";
+	String^ accountNumber = ConfigurationManager::AppSettings["AvaTax:AccountNumber"];
+	String^ licenseKey = ConfigurationManager::AppSettings["AvaTax:LicenseKey"];
+	String^ serviceURL = ConfigurationManager::AppSettings["AvaTax:ServiceUrl"];
+
 	try
 	{
 		TaxSvc^ taxSvc = gcnew TaxSvc;

@@ -57,6 +57,9 @@
       <AdditionalDependencies>
       </AdditionalDependencies>
     </Link>
+    <PostBuildEvent>
+      <Command>copy app.config "$(TargetPath).config"</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -75,10 +78,12 @@
       <HintPath>Avalara.AvaTax.Adapter.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="app.ico" />
     <None Include="ReadMe.txt" />
   </ItemGroup>

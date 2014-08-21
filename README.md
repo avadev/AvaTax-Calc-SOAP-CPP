@@ -9,8 +9,8 @@ The Visual Studio solution uses a main.cpp file to run the Avalara AvaTax method
  
 Requirements:
 ----------
-- If you do not have an AvaTax account, a free trial account can be acquired through our [developer site](http://developer.avalara.com/api-get-started)
-- Enter your account credentials in each test file (e.g. \Source Files\PingTest.cpp) you would like to run. You can pass your free trial Username and Password in the accountNumber and licenseKey fields, otherwise use your actual account and key.
+- If you do not have an AvaTax account, a free trial account can be acquired through our [developer site](http://developer.avalara.com/getting-started)
+- Enter your account credentials app.config. You may need to clean build and then rebuild the solution if you run it before changing the credentials. You can pass your free trial Username and Password in the accountNumber and licenseKey fields, otherwise use your actual account and key.
 - If you're using a paid account instead of a free trial account, you will also need to change the CompanyCode in some files. The default value we have entered is APITrialCompany.
   
 Contents:
@@ -40,6 +40,7 @@ Dependencies:
 -----------
 - .NET 2.0 or later
 - Avalara.AvaTax.Adapter.DLL (included in sample)
+
 
 
 
