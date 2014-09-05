@@ -1,5 +1,6 @@
 AvaTax-SOAP-CPP
 =====================
+[Other Samples](http://developer.avalara.com/api-docs/api-sample-code)
 
 This is a sample for C++/CLI demonstrating the [AvaTax SOAP API](http://developer.avalara.com/api-docs/soap) methods.
 
